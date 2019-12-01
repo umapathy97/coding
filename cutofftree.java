@@ -53,3 +53,7 @@ class Solution {
         return -1;
     }
 }
+/*
+time complexity: (n^2c^2)
+where n number of rows c number of columns. visit each node(nc) for each node search bfs takes (nc) so (nc)^2
+space complexity (nc) .  */
