@@ -29,8 +29,9 @@ class Solution {
   }
 
 }
-
-*/
+//time complexities: (nlogk)
+                    n size of input. k 
+/*
 Test Case #1
 Input:[1],0,Expected:[1].Actual:[1]
 Test Case #2
@@ -43,6 +44,4 @@ Test Case #5
 Input: [1,4,5,2,3,7,8,6,10,9], 2,Expected: [1,2,3,4,5,6,7,8,9,10],Actual: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 Test Case #6
 Input: [6,1,4,11,2,0,3,7,10,5,8,9], 6,Expected: [0,1,2,3,4,5,6,7,8,9,10,11],Actual: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-time complexities: (nlogk)
-                    n size of input. k 
-                    /*
+                    */
