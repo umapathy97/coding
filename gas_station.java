@@ -1,4 +1,4 @@
-     class Solution {
+class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int deficiency =0;
         int start =0;
