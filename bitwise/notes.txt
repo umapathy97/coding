@@ -1,0 +1,44 @@
+Read Question from : https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/
+    & (bitwise AND) Takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both bits are 1.
+    | (bitwise OR) Takes two numbers as operands and does OR on every bit of two numbers. The result of OR is 1 if any of the two bits is 1.
+    ^ (bitwise XOR) Takes two numbers as operands and does XOR on every bit of two numbers. The result of XOR is 1 if the two bits are different.
+    << (left shift) Takes two numbers, left shifts the bits of the first operand, the second operand decides the number of places to shift.
+    >> (right shift) Takes two numbers, right shifts the bits of the first operand, the second operand decides the number of places to shift.
+    ~ (bitwise NOT) Takes one number and inverts all bits of it
+ IMPORTANT:
+ 1. The left shift and right shift operators should not be used for negative numbers.
+ 2. The bitwise XOR operator is the most useful operator from technical interview perspective.
+    ->Finding The Missing Number
+    ->Swapping without temp variable
+    ->A Memory Efficient Doubly Linked List
+    ->Find two non repeating elements
+    ->sum of two numbers
+    ->convert one number to another number bits count
+    ->Detect two numbers have same sign
+ 3.The bitwise operators should not be used in place of logical operators. & is not &&. | is not ||.
+ 4.The left-shift and right-shift operators are equivalent to multiplication and division by 2 respectively.
+ 5.The & operator can be used to quickly check if a number is odd or even
+ 6.The ~ operator should be used carefully
+ Modulus operation is costly. Premature optimization is the root of all evil.
+ Bitwise and logical operators are different.
+ Differences:
+    The logical and operator ‘&&’ expects its operands to be boolean expressions (either 1 or 0) and returns a boolean value.
+    The bitwise and operator ‘&’ works on Integral (short, int, unsigned, char, bool, unsigned char, long) values and return Integral value.
+    A zero is considered as false and non-zero is considered as true. In Logical operations.
+    ShortCircuit logics are applicable in logical operators.
+    Bit fields are used to  store data memory efficiently.
+            struct date {
+            unsigned int d;
+            unsigned int m;
+            unsigned int y;
+        };
+     // Space optimized representation of the date
+    struct date {
+        // d has value between 1 and 31, so 5 bits
+        // are sufficient
+        unsigned int d : 5;
+        // m has value between 1 and 12, so 4 bits
+        // are sufficient
+        unsigned int m : 4;
+        unsigned int y;
+    };
