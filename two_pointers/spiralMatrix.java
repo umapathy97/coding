@@ -9,15 +9,15 @@ class Solution {
         int right = matrix[0].length-1;
         while(top<=bottom && left<=right){
             for(int i=left;i<=right;i++){
-                if(top>bottom)
-                    return result;
+                //if(top>bottom)  above case had been taken care at begiining of the loop itself.
+                  //  return result;
                 result.add(matrix[top][i]);
               
             }
            top++;
             for(int i=top;i<=bottom;i++){
-                if(left>right)
-                    return result;
+             //   if(left>right)
+               //     return result;
                 result.add(matrix[i][right]);
               
             }
