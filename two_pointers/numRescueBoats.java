@@ -8,7 +8,7 @@ class Solution {
           
             if(people[j]+people[i]<=limit){
                 result++;i--;j++;
-            }/* As after sorted person at last index will be always travel individually.
+            }/* As after sorted person at last index will be always travel individually.*/
             else if(people[i]<=limit){
                 result++;
             i--;}
