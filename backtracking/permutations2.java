@@ -37,3 +37,10 @@ class Solution {
 time complexity:O( N! * N)
 space complexity:O(n)
 */
+
+
+/*
+instead refer: https://www.youtube.com/watch?v=nYFd7VHKyWQ
+and use count array approach instead of visited .
+count occurence of each character in original array. and decrement that character when we used it.
+*/
