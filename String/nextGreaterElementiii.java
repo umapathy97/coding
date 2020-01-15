@@ -47,9 +47,9 @@ class Solution {
     }
 }
 /*
-Time complexity : O(n)O(n). In worst case, only two scans of the whole array are needed.
+Time complexity : O(n). In worst case, only two scans of the whole array are needed.
 
-Space complexity : O(1)O(1). No extra space is used. In place replacements are done.
+Space complexity : O(1). No extra space is used. In place replacements are done.
 
 beats 100% time and 100% space .
 
