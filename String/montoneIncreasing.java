@@ -7,8 +7,7 @@ class Solution {
         // peak variable to get index where strictly decreasing sequence starts.
         int peak=nums.length;
         while(j>=0){
-        /*
-          if current number is greater than next element consider it as peak; 
+          //if current number is greater than next element consider it as peak; 
             if(nums[j]>nums[j+1]){
             // here even if both numbers are same as in 332 i.e becomes 322
             //and later peaks becomes 3 and decrease to 2. 222
