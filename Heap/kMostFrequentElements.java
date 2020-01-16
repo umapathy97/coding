@@ -14,6 +14,7 @@ class Solution {
         /*
         java comparator is used. here minheap stores each entry(key,value) of hashmap.
         it stores in sorted order
+        */
         PriorityQueue<Map.Entry<Integer,Integer>> minheap = new PriorityQueue<>((a,b)-> (a.getValue()-b.getValue()));
         for(int i=0;i<nums.length;i++){
            map.put(nums[i], map.getOrDefault(nums[i],0)+1);
