@@ -20,7 +20,7 @@ class Solution {
     pend= denotes ending of post order in array.
     istart=denotes starting of inorder array(here from right side).
     as inorder stores left->root->right
-       postorder stores left->root->right.
+       postorder stores left->right->root.
       iend= denotes ending of inorder array.
       */
     TreeNode helper(int pstart,int pend,int istart,int iend,int[] postorder,int[]inorder,
@@ -34,9 +34,9 @@ class Solution {
         int index= map.get(postorder[pstart]);
         /*
         for preorder we first build left and then right.
-        for postorder here we build right tree first as it is convenient.
-        for our right our next root i.e . pstart will be in pstart-1 as it stores like this in postorder.
-                             our end pend will be our current root - number of right trees+1.as we need last right tree.
+        for postorder here we start with right tree first as it is convenient.
+        for our right our next root i.e . pstart will be in pstart-1 as in preorder next right will be just behind this.
+                   our end pend will be our current root - number of right trees+1.as we need last index of current right tree.
         */   
         root.right= helper(pstart-1,pstart-(istart-index),istart,index+1,postorder,inorder,map);
         /*
