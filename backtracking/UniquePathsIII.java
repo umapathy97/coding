@@ -43,3 +43,7 @@ class Solution {
             empty++;
     }
 }
+/*
+Time complexity: O(4^n*m): geenric for any backtracking problem O(b^d) where b is the branching factor and d is the depth of the
+recursion. here b=4 and d= number of elements in matrix.
+Space complexity:O(n*m)
