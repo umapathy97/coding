@@ -34,8 +34,13 @@ public class Solution {
         int maxLength = 0;
         map.put(0, -1);
         for (int i = 0; i < nums.length; i++) {
+            // update running sum
             sum += nums[i];
+            
+            // if sum - k is found, implies there is a subarray whose sum equals k exists
             if (map.containsKey(sum - k)) {
+                
+                // update max length from current index - starting index of current subarray
                 maxLength = Math.max(maxLength, i - map.get(sum - k));
             }
             else
@@ -46,6 +51,12 @@ public class Solution {
     }
 }
 
+/**
+    Time Complexity: O(n)
+    Space Complexity : O(n)
+**/
+
+// trails:
 /**
  * 
  * [1,-1,5,-2,3]
