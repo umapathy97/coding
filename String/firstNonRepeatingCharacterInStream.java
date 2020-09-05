@@ -31,3 +31,9 @@ public class Solution {
          System.out.println(sol.getNonRepeatingCharacter());
      }
 }
+
+/*
+when character size get's huge it's inefficient to store all characters that are already repeating.
+Hence at each get call , traversing the map remove all the index whose count > 1 
+This will be memory efficient and also ensure number of items to be traverse will be less for subsequent calls.
+*/
